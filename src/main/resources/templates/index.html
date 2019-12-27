@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" th:href="@{/css/demo.css}"/>
+    <link rel="stylesheet" th:href="@{webjars/bootstrap/4.4.1/css/bootstrap.min.css}">
+
+    <title>Spring Boot Thymeleaf Hello World Example</title>
+    <style>
+        /* Make the image fully responsive */
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <a class="navbar-brand" href="#">跃动运营</a>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    首页
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="productService" data-toggle="dropdown">
+                    产品与服务
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="advisoryService">咨询服务</a>
+                    <a class="dropdown-item" href="#">number2</a>
+                    <a class="dropdown-item" href="#">number3</a>
+                    <a class="dropdown-item" href="#">number4</a>
+                    <a class="dropdown-item" href="#">number5</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="solution" data-toggle="dropdown">
+                    解决方案
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">number1</a>
+                    <a class="dropdown-item" href="#">number2</a>
+                    <a class="dropdown-item" href="#">number3</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    应用案例
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    新闻动态
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    帮助中心
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    关于我们
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+    <!-- 指示符 -->
+    <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+
+    <!-- 轮播图片 -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img th:src="${img1}" alt="轮播一">
+        </div>
+        <div class="carousel-item">
+            <img th:src="${img2}" alt="轮播二">
+        </div>
+        <div class="carousel-item">
+            <img th:src="${img3}" alt="轮播三">
+        </div>
+    </div>
+
+    <!-- 左右切换按钮 -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </a>
+</div>
+
+<script type="text/javascript" th:src="@{webjars/jquery/3.0.0/jquery.min.js}"></script>
+<script type="text/javascript" th:src="@{webjars/bootstrap/4.4.1/js/bootstrap.min.js}"></script>
+
+</body>
+</html>

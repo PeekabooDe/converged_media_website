@@ -1,0 +1,22 @@
+body{
+    padding-top: 5rem;
+}
+.starter-template{
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+.dropdown>.dropdown-toggle:active {
+    pointer-events: none;
+}
+
+h1{
+    color: #0000FF;
+}
+
+h2{
+    color: #FF0000;
+}
